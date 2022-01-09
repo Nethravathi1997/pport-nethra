@@ -1,0 +1,137 @@
+@import "../../global.scss";
+.portfolio{
+    background-color: white;
+    margin-top: 50px;
+   .head{
+       font-size: 50px;
+       text-align: center;
+       margin-bottom: 60px;
+   }
+    .abtme{
+        display: flex;
+
+        @include mobile{
+            flex-direction: column;
+            padding-left:0px ;
+            align-items: center;
+            margin-left: -45px;
+            overflow: hidden;
+        }
+    
+
+    .left{
+        flex: 0.5;
+
+        @include mobile{
+           margin-bottom: 50px;
+
+        }
+    }
+
+    h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    h2{
+        align-items: left;
+        font-size: 35px;
+        margin-left: 10px;
+        color: $mainColor;
+        margin-bottom: 10px;
+
+        @include mobile{
+            font-size: 40px;
+            text-align: center;
+            margin-left: 10px;
+
+        }
+}
+.li{
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 1cm;
+
+    @include mobile{
+        font-size: 18px;
+        text-align: center;
+        margin-left: 35px;
+        padding: 10px;
+        line-height: 0.75cm;
+    }
+}
+    p{
+        margin: 10px;
+        padding: 0;
+        font-weight: 400;
+        margin-left: 10px;
+        font-size: 25px;
+        line-height: 1cm;
+        
+
+        @include mobile{
+            font-size: 18px;
+            text-align: center;
+            margin-left: 35px;
+            padding: 10px;
+        }
+    }
+}
+
+.right{
+    flex: 0.5;
+
+    .tech{
+        display: flex;
+        flex-direction: column;
+
+        h3{
+            font-size: 25px;
+            margin-bottom: 20px;
+            text-align: center;
+
+        }
+
+        .fend{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+            .teco{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+
+                @include mobile{
+                    
+                    margin-left: 12px;
+         
+                 }
+
+                img{
+                    width: 80px;
+                    height: 75px;
+                    margin-right: 25px;
+
+                    @include mobile{
+                        width: 60px;
+                        height: 60px;
+                        margin-right: 5px;
+                        margin-left: 2px;
+                        
+             
+                     }
+                }
+            }
+
+            
+        }
+
+        
+    }
+}
+}
